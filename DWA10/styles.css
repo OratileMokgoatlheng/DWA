@@ -1,15 +1,14 @@
 :root{
     --color-white: white;
-    --color-dark-grey: #3d348b;
-    --color-medium-grey:  #f7b801;
+    --color-medium-orange:  #f7b801;
     --color-light-grey:#7678ed ;
-    --color-blue: #f18701;
-    --color-red: #f35b04;
+    --color-orange: #f18701;
 }
 
 *{
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
 }
 header h1{
     margin: 0;
@@ -20,13 +19,12 @@ header h1{
 }
 body{
     margin:0;
-    background-color: var(--color-dark-grey);
     font-family: Roboto, Arial, Helvetica, sans-serif;
     height: 100%;
 }
 
 .tally-box {
-    background: var(--color-medium-grey);
+    background: var(--color-medium-orange);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -38,7 +36,7 @@ body{
 }
 
 #counter-value::part(base){
-    background: none;
+    background:  var(--color-orange) ;
     height:200px;
 }
 
@@ -57,7 +55,7 @@ body{
     
 }
 .counter-button{
-    
+    width: 30px;
     transition: transform 0.2s;
     transform: translateY(0);
 }
@@ -73,6 +71,7 @@ body{
 .reset-button{
     display: flex;
     justify-content: center;
+    background-color: var(--color-light-grey);
 }
 .reset-button::part(base){
     color:white;
